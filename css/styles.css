@@ -96,6 +96,19 @@ header .fa-bars {
     display: none;
 }
 
+body .dark-mode {
+    background-color: #121212; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto claro */
+}
+
+body .dark-mode .navbar {
+    background-color: #1e1e1e; /* Color de fondo de la barra de navegación en modo oscuro */
+}
+
+body .dark-mode .navbar a {
+    color: #ffffff; /* Color de texto de los enlaces en modo oscuro */
+}
+
 .home {
     display: flex;
     align-items: center;
