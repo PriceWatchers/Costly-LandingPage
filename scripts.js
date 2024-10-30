@@ -19,10 +19,3 @@ document.querySelectorAll('.navbar a, .btn').forEach(anchor => {
         });
     });
 });
-
-
-const toggleButton = document.getElementById('toggle-dark-mode');
-toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode'); // Cambia la clase del body
-    toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro'; // Cambia el texto del botón
-});

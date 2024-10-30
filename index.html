@@ -29,9 +29,19 @@
         <a href="#home">Inicio</a>
         <a href="#beneficios">Beneficios</a>
         <a href="#herramientasv">Herramientas</a>
-        <a href="#Contacto">Contacto</a>
-        <button id="toggle-dark-mode" style="cursor: pointer; margin-left: 20px;">Modo Oscuro</button>
+        <a href="#contacto">Contacto</a>
+        <button id="toggle-dark-mode">Modo Oscuro</button>
     </nav>
+
+    <script>
+      const toggleButton = document.getElementById('toggle-dark-mode');
+      const body = document.body;
+    
+      toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');   
+    
+      });
+    </script>
 
     <script 
     src="https://kit.fontawesome.com/fb4be2fcc2.js" 
@@ -79,10 +89,10 @@
       <div class="benefit-item">
         <div class="text-content">
           <h3>La aplicación de comercio, líder en el Perú</h3>
-          <p>Comparación en tiempo real</p>
-          <p>Ahorro inteligente</p>
-          <p>Transparencia en precios</p>
-          <p>Plataforma confiable y segura</p>
+          <p>✅Comparación en tiempo real</p>
+          <p>✅Ahorro inteligente</p>
+          <p>✅Transparencia en precios</p>
+          <p>✅Plataforma confiable y segura</p>
         </div>
         <div class="image-content">
           <img src="img/supermercado.png">
@@ -92,9 +102,9 @@
       <div class="benefit-item">
         <div class="text-content">
           <h3>Información en tiempo real</h3>
-          <p>
-            Proporcionamos información en tiempo real sobre los precios de productos esenciales, permitiendo a nuestros usuarios acceder a las ofertas más actualizadas y comparar precios de forma rápida y eficiente.
-          </p>
+          <p>✅Ofertas más recientes</p>
+          <p>✅Eficiencia en la compra</p>
+          <p>✅Acceso desde cualquier dispositivo</p>
         </div>
         <div class="image-content">
           <img src="img/tiempo.png">
@@ -104,9 +114,10 @@
       <div class="benefit-item">
         <div class="text-content">
           <h3>Pagos eficientes</h3>
-          <p>
-            Garantizamos pagos eficientes y seguros, facilitando a nuestros usuarios una experiencia de compra rápida y sin complicaciones.
-          </p>
+          <p>✅Pagos seguros</p>
+          <p>✅Eficiencia en el proceso</p>
+          <p>✅Experiencia sin interrupciones</p>
+          <p>✅Confiabilidad garantizada</p>
         </div>
         <div class="image-content">
           <img src="img/pagos.png">
@@ -179,6 +190,38 @@
       
     </div>
   </section>
+
+  <footer>
+    <div class="contact-container" id="contacto">
+      <div class="logo">
+        <img src="img/logo.png">
+        <h3>Costly</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#herramientasv">Herramientas</a></li>
+        </ul>
+      </nav>
+      <div class="contacto">
+        <p><i class="fas fa-phone-alt"></i> +51 973964283</p>
+        <p><i class="fas fa-envelope"></i> soporte@costly.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Av. Alameda San Marcos 11, Chorrillos</p>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+  
+        </div>
+      </div>
+      <div 
+   class="apps">
+        <a href="#"><img src="img/app-store.png"></a>
+        <a href="#"><img src="img/google-play.png"></a>
+      </div>
+    </div>
+  </footer>
   
 </body>
 </html>
