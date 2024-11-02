@@ -15,8 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fenix&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda:wght@400..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="public/assets/styles/styles.css">
-    <link rel="stylesheet" href="public/assets/scripts/scripts.js">
-    <link rel="stylesheet" href="public/assets/images/logo.png">
+
 </head>
 <body>
 <header>
@@ -24,7 +23,9 @@
     <input  type="checkbox" name="" id="toggler";
     <label for="toggler" class="fas fa-bars"></label>
     
-    <a href="#" class="logo">Costly</a>
+    <a href="#" class="logo">
+      <img src="public/assets/images/logo.png"
+    </a>
 
     <nav class="navbar">
         <a href="#home">Inicio</a>
@@ -39,7 +40,7 @@
       const body = document.body;
     
       toggleButton.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');   
+        body.classList.toggle('dark-mode'); 
     
       });
     </script>

@@ -74,15 +74,9 @@ header {
     background-color: var(--dark-background);
 }
 
-header .logo {
-    background-image: url(".../public/assets/images/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
+header .logo img{
     width: 120px;
     height: 60px;
-    text-indent: -9999px;
 }
 
 header .navbar a {
