@@ -79,14 +79,18 @@ header .logo img{
     height: 60px;
 }
 
+header .navbar.active {
+    transform: translateX(0);
+}
+
 header .navbar a {
     font-family: "Fenix", sans-serif;
     font-size: 2rem;
     padding: 2.5rem;
     color:#878787;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Alinea verticalmente en el centro */
-    gap: 2rem; /* Espacio entre los enlaces */
+    justify-content: center; 
+    align-items: center; 
+    gap: 2rem; 
 }
 
 header .navbar a:hover {
@@ -117,6 +121,18 @@ header .fa-bars {
     cursor: pointer;
     border:.1rem solid rgba(0,0,0,.3);
     display: none;
+}
+
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #4caf50; /* Color del botón */
+    cursor: pointer;
+    position: absolute; /* Permite moverlo al extremo derecho */
+    top: 1rem; /* Ajusta la posición vertical */
+    right: 1rem; /* Ajusta la posición al lado derecho */
 }
 
 .home {
@@ -256,7 +272,6 @@ header .fa-bars {
     flex: 1;
     padding-right: 2rem;
     align-items: center;
-    /* max-width: 200%;     */
     margin-left: 15rem;
 }
   
@@ -503,73 +518,187 @@ footer .logo img{
     border-radius: 5px;
 }
 
-@media (max-width: 991px) {
-    html {
-        font-size: 55%;
+@media (max-width: 1200px) {
+    .home img {
+        display: none;
     }
-    header {
-        padding: 2rem;
+
+    .home .content {
+        max-width: 100%;
+    }
+
+    .benefit-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefit-item .text-content {
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .benefit-item .image-content img {
+        margin-left: 0;
     }
 }
 
-@media (max-width: 768px) {
-    .benefit-item {
+@media (max-width: 991px) {
+    header .navbar a {
+        padding: 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    header .navbar button {
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .home {
+        font-size: 2.5rem;
         flex-direction: column;
-    }
-    
-    .benefit-item .text-content, .benefit-item .image-content {
-        padding: 0;
-        margin-bottom: 1.5rem;
+        padding: 4rem 2rem;
     }
 
-    .herramientasv .card {
-        width: 300px;
-    }
-
-    .herramientasc .card {
-        width: 300px;
+    .cards {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 2rem;
     }
 
     .plan-container {
         flex-direction: column;
-        align-items: center;
+        gap: 4rem;
     }
 
-    header .fa-bars{
-        display: block;
-    }
-
-    header .navbar{
-        position: absolute;
-        top:100%; left:0; right:0;
-        background: #eee;
-        border-top: .1rem solid rgba(0,0,0,.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header #toggler:checked ～ .navbar {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar a{
-        margin: 1.3rem;
-        padding: 1.5rem;
-        background: #fff;
-        border: .1rem solid rgba(0,0,0,.1);
-        display: block;
-    }
-
-    .container {
+    .contact-container {
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
+    }
+
+    .contact-container a {
+        margin-top: 1rem;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
+    .home .content h3 {
+        font-size: 2.8rem;
+    }
+
+    .cards h3 {
+        font-size: 2.6rem;
+    }
+
+    .cards p {
+        font-size: 1.8rem;
+    }
+
+    .cards ul {
+        font-size: 1.8rem;
+    }
+
+    .home .content span {
+        font-size: 2rem;
+    }
+
+    .home .content p {
+        font-size: 2rem;
+    }
+
+    .home .content a {
+        font-size: 2rem;
+    }
+
+    .beneficios .container h2 {
+        font-size: 2.6rem;
+    }
+
+    .beneficios .container .benefit-item .text-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .beneficios .container .benefit-item .text-content p {
+        font-size: 2rem;
+    }
+
+    .herramientasv h2 {
+        font-size: 2.6rem;
+    }
+
+    .herramientasc h2 {
+        font-size: 2.6rem;
+    }
+
+    .plans h2 {
+        font-size: 2.6rem;
+    }
+
+    header .menu-toggle {
+        display: block; 
+    }
+
+    header .navbar {
+        display: none; 
+        flex-direction: column;
+        background-color: #f6ffe6;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        max-width: 300px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    header .navbar.active {
+        display: flex; 
+    }
+
+    header .navbar ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    header .navbar ul li {
+        border-bottom: 1px solid #d3e4bc;
+    }
+
+    header .navbar ul li:last-child {
+        border-bottom: none;
+    }
+
+    header .navbar ul li a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
     html {
         font-size: 50%;
     }
+
     header {
+        padding: 1rem 2rem;
+    }
+
+    .home {
         padding: 2rem;
+    }
+
+    .cards .card {
+        max-width: 100%;
+    }
+
+    .plan {
+        width: 100%;
+    }
+
+    .benefit-item .image-content img {
+        max-width: 150px;
+    }
+
+    .social-media a {
+        margin-right: 2rem;
     }
 }
