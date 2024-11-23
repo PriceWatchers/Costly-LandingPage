@@ -630,11 +630,15 @@ footer .logo img{
     }
 
     .planes h2 {
-        font-size: 2.6rem;
+        font-size: 2.3rem;
     }
 
     .planes .card {
-        gap: 8rem;
+        gap: 3rem;
+    }
+
+    .planes .plan li {
+        font-size: 1.6rem;
     }
 
     header .menu-toggle {
@@ -726,7 +730,7 @@ footer .logo img{
         font-size: 2.6rem;
     }
 
-    .plans h2 {
+    .planes h2 {
         font-size: 2.6rem;
     }
 
