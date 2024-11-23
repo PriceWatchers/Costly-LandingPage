@@ -19,3 +19,5 @@ document.querySelectorAll('.navbar a, .btn').forEach(anchor => {
         });
     });
 });
+
+

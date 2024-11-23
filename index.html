@@ -18,14 +18,17 @@
 
 </head>
 <body>
-<header>
-
-    <input  type="checkbox" name="" id="toggler";
-    <label for="toggler" class="fas fa-bars"></label>
-    
+<header>  
     <a href="#" class="logo">
       <img src="public/assets/images/logo.png"
     </a>
+
+    <!-- <button class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button> -->
+
+    <button class="menu-toggle">☰</button>
+
 
     <nav class="navbar">
         <a href="#home">Inicio</a>
@@ -42,6 +45,13 @@
       toggleButton.addEventListener('click', () => {
         body.classList.toggle('dark-mode'); 
     
+      });
+
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navbar = document.querySelector('.navbar');
+
+      menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
       });
     </script>
 
