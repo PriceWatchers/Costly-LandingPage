@@ -65,8 +65,8 @@
 
     <div class="content">
         <h3>¡Mantente al día con los precios de productos esenciales!</h3>
-        <span> Costly te ayuda a comparar precios de productos esenciales, para que elijas siemprelo mejor para ti y tu familia </span>
-        <p>Somos una empresa que ofrece a los usuarios informacion precisa y actualizada sobre las mejores ofertas y la fluctuacion de precios de productos de primera necesidad</p>
+        <span> Costly te ayuda a comparar precios de productos esenciales, para que elijas siempre lo mejor para ti y tu familia </span>
+        <p>Somos una empresa que ofrece a los usuarios informacion precisa y actualizada sobre las mejores ofertas y la fluctuacion de precios de productos básicos</p>
         <a href="#planes" class="btn">Ver planes</a>
     </div>
 
@@ -125,14 +125,14 @@
   
       <div class="benefit-item">
         <div class="text-content">
-          <h3>Pagos eficientes</h3>
-          <p>✅Pagos seguros</p>
-          <p>✅Eficiencia en el proceso</p>
-          <p>✅Experiencia sin interrupciones</p>
-          <p>✅Confiabilidad garantizada</p>
+          <h3>Mayor visibilidad</h3>
+          <p>✅Ayudamos a las tiendas a destacar en el mercado</p>
+          <p>✅Ofrecemos practicidad para promocionarse</p>
+          <p>✅Potenciamos la conexión con compradores</p>
+          <p>✅Facilitamos que se conozcan más sus productos</p>
         </div>
         <div class="image-content">
-          <img src="public/assets/images/pagos.png">
+          <img src="public/assets/images/visibilidad.png">
         </div>
       </div>
     </div>
@@ -184,9 +184,9 @@
         <ul>
           <li>Los usuarios pueden comparar precios, pero con restricciones</li>
           <li>Actualizaciones de precios, aunque no en tiempo real</li>
-          <li>Publicidad ocasional mientras navegan en la plataforma</li>
+          <li>Publicidad ocasional</li>
         </ul>
-        <button class="join-button">Unirse</button>
+        <button class="join-button">Empezar</button>
       </div>
       
       <div class="plan">
@@ -197,6 +197,8 @@
           <li>Se eliminan todos los anuncios</li>
         </ul>
         <button class="join-button">Unirse</button>
+        <button class="free-button">Prueba gratis</button>
+        <span class="trial-badge">1 mes</span> </div>
       </div>
       
     </div>
@@ -220,19 +222,43 @@
         <p><i class="fas fa-envelope"></i> soporte@costly.com</p>
         <p><i class="fas fa-map-marker-alt"></i> Av. Alameda San Marcos 11, Chorrillos</p>
         <div class="social-media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a> 
-  
+            <i href="#" class="fab fa-facebook-f" id="facebook"></i></a>
+            <i href="#" class="fab fa-twitter" id="twitter"></i></a>
+            <i href="#" class="fab fa-linkedin-in" id="linkedin"></i></a> 
         </div>
       </div>
-      <div 
-   class="apps">
-        <a href="#"><img src="public/assets/images/app-store.png"></a>
-        <a href="#"><img src="public/assets/images/google-play.png"></a>
+      <div class="apps">
+          <img src="public/assets/images/app-store.png" href="#" id="appStore"></a>
+          <img src="public/assets/images/google-play.png" href="#" id="googlePlay"></a>
       </div>
     </div>
   </footer>
-  
+  <script>
+    const facebookLink = document.getElementById('facebook');
+    const twitterLink = document.getElementById('twitter');
+    const linkedinLink = document.getElementById('linkedin');
+    const appStoreLink = document.getElementById('appStore');
+    const googlePlayLink = document.getElementById('googlePlay');
+
+    facebookLink.addEventListener('click', () => {
+        window.location.href = 'https://www.facebook.com/'; 
+    });
+    
+    twitterLink.addEventListener('click', () => {
+        window.location.href = 'https://twitter.com/'; 
+    });
+      
+    linkedinLink.addEventListener('click', () => {
+        window.location.href = 'https://linkedin.com/'; 
+    });
+      
+    appStoreLink.addEventListener('click', () => {
+        window.location.href = 'https://www.apple.com/la/app-store/'; 
+    });
+
+    googlePlayLink.addEventListener('click', () => {
+        window.location.href = 'https://play.google.com/store/games?hl=es_419';
+    });
+  </script>
 </body>
 </html>

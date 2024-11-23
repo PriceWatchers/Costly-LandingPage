@@ -20,4 +20,28 @@ document.querySelectorAll('.navbar a, .btn').forEach(anchor => {
     });
 });
 
+const facebookLink = document.getElementById('facebook');
+const twitterLink = document.getElementById('twitter');
+const linkedinLink = document.getElementById('linkedin');
+const appStoreLink = document.getElementById('appStore');
+const googlePlayLink = document.getElementById('googlePlay');
 
+facebookLink.addEventListener('click', () => {
+    window.location.href = 'https://www.facebook.com/'; // Cambia la URL por la del perfil de Facebook
+});
+    
+twitterLink.addEventListener('click', () => {
+    window.location.href = 'https://twitter.com/'; // Cambia la URL por la del perfil de Twitter
+});
+  
+linkedinLink.addEventListener('click', () => {
+    window.location.href = 'https://linkedin.com/'; // Cambia la URL por la del perfil de Twitter
+});
+  
+appStoreLink.addEventListener('click', () => {
+    window.location.href = 'https://tiktok.com/'; // Cambia la URL por la del perfil de Twitter
+});
+
+googlePlayLink.addEventListener('click', () => {
+    window.location.href = 'https://www.instagram.com/'; // Cambia la URL por la del perfil de Instagram
+});

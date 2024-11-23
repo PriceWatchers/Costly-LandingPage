@@ -124,15 +124,15 @@ header .fa-bars {
 }
 
 .menu-toggle {
-    display: none; /* Oculto por defecto */
-    font-size: 2rem;
+    display: none; 
+    font-size: 3rem;
     background: none;
     border: none;
-    color: #4caf50; /* Color del botón */
+    color: #4caf50;
     cursor: pointer;
-    position: absolute; /* Permite moverlo al extremo derecho */
-    top: 1rem; /* Ajusta la posición vertical */
-    right: 1rem; /* Ajusta la posición al lado derecho */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 .home {
@@ -422,7 +422,7 @@ header .fa-bars {
     display: flex;
     justify-content: center;
     gap: 15rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
   
 .plan {
@@ -457,22 +457,58 @@ header .fa-bars {
     font-weight: 400;
 }
   
+.plan button {
+    justify-content: center; 
+    gap: 3rem;
+}
+
 .join-button {
     margin-top: 2rem;
     margin-bottom: 3rem;
     background-color: var(--green);
     color: white;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 1rem;
     border: none;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     cursor: pointer;
+    flex: 1;
 }
   
 .join-button:hover {
     background-color: #585858;
 }
+
+.free-button {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #F64646;
+    color: white;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    flex: 1;
+}
+
+.free-button:hover {
+    background-color: #585858;
+}
   
+.trial-badge {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: #F64646;
+    color: white;
+    text-align: center;
+    line-height: 17px; 
+    margin-left: 5px;
+    font-size: 1.8rem;
+    font-family: "Fenix", sans-serif;
+}
 
 footer .logo img{
     max-width: 150px;
@@ -506,7 +542,7 @@ footer .logo img{
     font-weight: 400;
 }
 
-.social-media a {
+.social-media i {
     color: #C4D926;
     margin-right: 4rem;
 }
@@ -609,6 +645,10 @@ footer .logo img{
         font-size: 2rem;
     }
 
+    .cards {
+        align-items: center;
+    }
+
     .beneficios .container h2 {
         font-size: 2.6rem;
     }
@@ -633,12 +673,24 @@ footer .logo img{
         font-size: 2.3rem;
     }
 
+    .planes h3 {
+        font-size: 2rem;
+    }
+
     .planes .card {
         gap: 3rem;
     }
 
     .planes .plan li {
         font-size: 1.6rem;
+    }
+
+    .join-button {
+        font-size: 1.5rem;
+    }
+
+    .free-button {
+        font-size: 1.5rem;
     }
 
     header .menu-toggle {
